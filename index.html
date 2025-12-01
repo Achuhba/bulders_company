@@ -97,38 +97,39 @@
         </div>
       </div>
     </main>
-    <section class="project">
+        <section class="project">
       <div class="project_wrapper">
-      <p class="project_h1">Наши проекты</p>
-       <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="slide1.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
-      <div class="swiper-slide"><img src="/img/slide2.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
-      <div class="swiper-slide"><img src="/img/slide3.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
-      <div class="swiper-slide"><img src="/img/slide4.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
-      <div class="swiper-slide"><img src="/img/slide5.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
+        <p class="project_h1">Наши проекты</p>
+        
+        <!-- Исправленная структура Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/slide1.webp" alt="Проект 1" class="carousel_slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide2.webp" alt="Проект 2" class="carousel_slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide3.webp" alt="Проект 3" class="carousel_slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide4.webp" alt="Проект 4" class="carousel_slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide5.webp" alt="Проект 5" class="carousel_slide">
+            </div>
+          </div>
+          <!-- Пагинация -->
+          <div class="swiper-pagination"></div>
+          <!-- Навигация -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
 
-</script>
+
   <p class="project_h1">Отзывы о нашей работе</p>
   <section class="review">
     <div class="review_wrapper">
@@ -187,5 +188,21 @@
     <p class="project_h1">Задание 6 по учебной практике</p>
     <p class="review_text1">Делал Жаврин Данил 1ВЕБ-42</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+  var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+
+</script>
   </body>
 </html>
