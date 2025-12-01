@@ -6,8 +6,7 @@
     <title>БетонПроф</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/logo.svg" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 <script src="script.js" defer></script>
   </head>
 
@@ -114,7 +113,22 @@
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
 
+</script>
   <p class="project_h1">Отзывы о нашей работе</p>
   <section class="review">
     <div class="review_wrapper">
