@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БетонПроф</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js" defer></script>
+  </head>
+
+  <body>
+      <div class="modal_wrapper">
+        <fieldset>
+          <legend>Ваш номер</legend>
+          <input type="text" placeholder="+7(999)999-99-99">
+        </fieldset>
+        <fieldset>
+          <legend>Ваше имя</legend>
+          <input type="text" placeholder="Данил">
+        </fieldset>
+        <button class="modal_btn close_btn">Заказать звонок</button>
+      </div>
+    <header>
+            <a href="index.html">
+      <img
+        class="header_logo"
+        src="img/logo.svg"
+        alt="Не поддерживается изображение"
+      />
+      </a>
+      <p class="header_text">Строим прекрасные дома и дачи для Вас</p>
+      <div class="header_contact">
+        <div class="header-wrapper-contact">
+          <p class="header_number">+7(999)999-99-99</p>
+          <p class="header_email">politex@mail.ru</p>
+        </div>
+        <button class="header_button open_btn" >Заказать звонок</button>
+      </div>
+    </header>
+    <nav>
+      <div class="nav_wrapper">
+        <a href="contact.html" class="nav_content">Контакты</a>
+        <a href="company.html" class="nav_content">О компании</a>
+      </div>
+    </nav>
+    <main>
+      <div class="main_wrapper">
+        <div class="main_content">
+          <p class="main_text">
+            Создаем дома и дачи для Ваших участков уже 20 лет
+          </p>
+          <img class="main_content-polosa" src="img/polosa.svg" alt="" />
+          <div class="main_contact">
+            <button class="main_contact-btn open_btn">Заказать консультацию</button>
+            <p class="main_contact-text">
+              Мы перезвоним Вам в течении 5 минут и бесплатно проконсультируем
+            </p>
+          </div>
+        </div>
+        <video
+          class="main_contact-video"
+          src="img/dacha.mp4"
+          loop
+          muted
+          autoplay
+        ></video>
+      </div>
+      <div class="main_box-wrapper">
+        <div class="box_color">
+          <p class="box_color-text1">Геологическое обследование</p>
+          <p class="box_color-text2">
+            При подготовке проекта выполняем инженерно-гидрографические
+            изыскания для составления топографических планов и схем
+            строительного объекта.
+          </p>
+        </div>
+        <div class="box_color">
+          <p class="box_color-text1">Строительство частных домов</p>
+          <p class="box_color-text2">
+            Выполняем заказа на строительство дома любой сложности
+          </p>
+        </div>
+        <div class="box_color">
+          <p class="box_color-text1">Комплекс отдыха</p>
+          <p class="box_color-text2">
+            Дома могут включать в себя банный комплекс, исскуственные водоемы,
+            бассейны
+          </p>
+        </div>
+        <div class="box_color">
+          <p class="box_color-text1">Реставрация старых домов</p>
+          <p class="box_color-text2">
+            Выполняем услуги профессиональной реставрации старых домов и дач
+          </p>
+        </div>
+      </div>
+    </main>
+    <section class="project">
+      <div class="project_wrapper">
+      <p class="project_h1">Наши проекты</p>
+       <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/img/slide1.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
+      <div class="swiper-slide"><img src="/img/slide2.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
+      <div class="swiper-slide"><img src="/img/slide3.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
+      <div class="swiper-slide"><img src="/img/slide4.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
+      <div class="swiper-slide"><img src="/img/slide5.webp" alt="Изображение неподдерживается" class="carousel_slide"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  </div>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+  <p class="project_h1">Отзывы о нашей работе</p>
+  <section class="review">
+    <div class="review_wrapper">
+    <div class="review_content">
+      <img src="img/review_logo.svg" alt="Изображение неподдерживается">
+      <div class="review_text-wrapper">
+      <p class="review_text1">Андрей Сергеев</p>
+      <p class="review_text2">Спасибо компании за наш дом! Строили быстро, без задержек. Все пожелания учли, прораб был внимательный. Получили именно то, о чем мечтали. Рекомендуем!</p>
+      </div>
+    </div>
+    <div class="review_content">
+      <img src="img/review_logo.svg" alt="Изображение неподдерживается">
+      <div class="review_text-wrapper">
+      <p class="review_text1">Елена Сидорова</p>
+      <p class="review_text2">Очень довольны качеством постройки. Приемка была строгой, но претензий не возникло. Дом тёплый, всё ровно, материалы хорошие. Цена полностью соответствует результату.</p>
+      </div>
+    </div>
+    <div class="review_content">
+      <img src="img/review_logo.svg" alt="Изображение неподдерживается">
+      <div class="review_text-wrapper">
+      <p class="review_text1">Сергей Иванов</p>
+      <p class="review_text2">Заказывали здесь дачный домик. Получили уютное и надежное гнездышко. Сделали в срок, уложились в бюджет. Теперь каждые выходные с семьей на природе. Огромное спасибо!</p>
+      </div>
+    </div>
+    <div class="review_content">
+      <img src="img/review_logo.svg" alt="Изображение неподдерживается">
+      <div class="review_text-wrapper">
+      <p class="review_text1">Мария Сергеевна</p>
+      <p class="review_text2">Работали с этой компанией первый раз. Всё прошло гладко: менеджер всё понятно объяснил, строители работали аккуратно. Никаких неприятных сюрпризов. Приятно иметь дело с профессионалами.</p>
+      </div>
+    </div>
+          <div class="review_sell">
+          <p class="review_text1">Скидка на первый заказ 5%</p>
+      </div>
+      <div class="review_sell1">
+      <p class="review_text1">Приведи друга и получи скидку</p>
+      </div>
+      </div>
+  </section>
+  <section class="trans">
+    <p class="project_h1">Наша техника</p>
+    <div class="trans_wrapper">
+    <div class="trans_img">
+      <img src="img/trans1.webp" alt="">
+    </div>
+    <div class="trans_btn-wrapper">
+        <button class="trans_btn">Экскаваторы</button>
+        <button class="trans_btn">Тралы</button>
+        <button class="trans_btn">Погрузчики</button>
+        <button class="trans_btn">Бульдозеры</button>
+        <button class="trans_btn">Катки</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p class="project_h1">Задание 6 по учебной практике</p>
+    <p class="review_text1">Делал Жаврин Данил 1ВЕБ-42</p>
+  </footer>
+  </body>
+</html>
