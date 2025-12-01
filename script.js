@@ -32,3 +32,15 @@ for (let i = 0; i<transBtn.length;i++){
             transImg.innerHTML = '<img src="img/trans5.webp" alt="">'
         })}
 }
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
